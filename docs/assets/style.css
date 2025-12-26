@@ -157,6 +157,10 @@ section h3 {
     border: 1px solid var(--border-color);
 }
 
+.links h2:not(:first-of-type) {
+    margin-top: 2rem;
+}
+
 .file-list {
     list-style: none;
     padding: 0;
