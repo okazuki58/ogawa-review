@@ -50,7 +50,7 @@
 - Slack API（events, im:history/im:read スコープ、OAuthフロー、ngrok開発フロー等）を調査
 - Bot トークンと User トークンの制約を確認し、DM 完全集約の実装方針を検討</p>
 <p><strong>Claude Code カスタムスキル開発（12/25）</strong>
-- performance-review カスタムスキル設計とプロトタイプ作成
+- goal-management カスタムスキル設計とプロトタイプ作成
 - grades.md/values.md/templates.md 等のテンプレートを整備
 - G2→G3（自走可能）に向けた目標設定フローの試作</p>
 <h3>アウトプット</h3>
@@ -145,7 +145,7 @@
 - index-weaviate.ts から Postgres/Prisma 関連削除（Weaviate のみ動作）
 - Git 操作・ワークツリー管理（package.json の scripts マージ・競合解消、PR 作成→マージ→クリーンアップ）</p>
 <p><strong>xincere-review システム設計（12/25）</strong>
-- performance-review / xincere-review 周りで、目標分解と週次自動振り返りの骨子を設計
+- goal-management / xincere-review 周りで、目標分解と週次自動振り返りの骨子を設計
 - maclogger / xincere-review / Google Sheets 連携案を固める</p>
 <hr />
 <h2>週次目標（Week 16）との照合</h2>
@@ -166,13 +166,13 @@
 <li><strong>maclogger の開発継続</strong>：Vision OCR 導入、常駐化の運用整備、週次レポート生成機能の実装</li>
 <li><strong>atoyoro の類似検索精度検証</strong>：Weaviate（ベクトル検索）の全パターン評価（約14,190通り）と改善提案</li>
 <li><strong>Slack DM 集約ボットの開発</strong>：仕様書作成、開発環境構築、ngrok 経由での動作確認</li>
-<li><strong>performance-review スキルの開発</strong>：カスタムスキル設計、テンプレート整備</li>
+<li><strong>goal-management スキルの開発</strong>：カスタムスキル設計、テンプレート整備</li>
 <li><strong>xincere-review システムの設計</strong>：週次運用フロー設計、GitHub Pages 連携案の策定</li>
 </ul>
 <h3>目標未達成の理由</h3>
 <ul>
 <li>緊急性の高い開発タスク（maclogger、atoyoro 検証、Slack ボット）を優先したため、計画していた記事執筆やドキュメント完成が後回しになった</li>
-<li>新規プロジェクト（performance-review、xincere-review）の立ち上げに時間を割いた</li>
+<li>新規プロジェクト（goal-management、xincere-review）の立ち上げに時間を割いた</li>
 <li>年末の業務調整や展示会準備など、チーム活動への参加を優先した</li>
 </ul>
 <hr />
@@ -201,7 +201,7 @@
 <p>イベント処理のエラーケース（重複・再送・スキーマ変更）への耐性強化</p>
 </li>
 <li>
-<p><strong>xincere-review / performance-review</strong></p>
+<p><strong>xincere-review / goal-management</strong></p>
 </li>
 <li>profile-builder スキルの初期実装（対話フロー・テンプレートの配置）</li>
 <li>
@@ -220,7 +220,7 @@
 <li><strong>Weaviate 検証の成果</strong>：ベクトル検索単体では見積項目カバレッジ観点で十分な精度が得られないことが明確になった。全組合せの網羅的評価で、キーワード一致ベースの手法やハイブリッド（ベクトル＋キーワード）を導入した方が実務的に有用であることが確認できた</li>
 <li><strong>実行パイプラインの自動化</strong>：生成→解析→レポート出力を整備できたため、今後別案件での比較検証や定期的な精度評価が容易になった</li>
 <li><strong>Slack DM 集約ボット</strong>：プロトタイプ（仕様書作成、ngrok経由でのイベント受信、Express→DB保存までの一連動作）を一通り実装・動作確認できた点は大きな前進</li>
-<li><strong>performance-review / xincere-review</strong>：目標分解と週次自動振り返りの骨子を設計できたため、個人の運用フローと社内展開の基盤が整いつつある</li>
+<li><strong>goal-management / xincere-review</strong>：目標分解と週次自動振り返りの骨子を設計できたため、個人の運用フローと社内展開の基盤が整いつつある</li>
 </ul>
 <h3>プロジェクト管理面</h3>
 <ul>
@@ -246,7 +246,7 @@
     
     <footer>
         <p><a href="../../index.html">ダッシュボードに戻る</a></p>
-        <p>2025-12-26 20:02:39</p>
+        <p>2025-12-27 03:02:13</p>
     </footer>
 </body>
 </html>
