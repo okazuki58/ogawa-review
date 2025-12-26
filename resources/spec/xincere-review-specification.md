@@ -12,7 +12,7 @@
 xincere-review/           # メインプロジェクト
 ├── .claude/
 │   └── skills/
-│       ├── performance-review/   # 評価支援skill
+│       ├── goal-management/   # 評価支援skill
 │       └── ogawa-profile/         # ユーザープロフィールskill
 ├── reviews/
 │   ├── YYYY-HX-前回評価.csv      # 評価シート（スプシからDL）
@@ -593,7 +593,7 @@ echo "🔗 https://ogawa.github.io/xincere-review/"
 
 ## skillsの仕様
 
-### performance-review skill
+### goal-management skill
 
 **責務**:
 - 評価基準（grades.md, values.md, templates.md）の管理
