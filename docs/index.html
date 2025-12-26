@@ -3,80 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>xincere-review - ダッシュボード</title>
+    <meta name="description" content="人事評価プロセス管理システム - 目標設定と振り返りのダッシュボード">
+    <title>xincere-review - Performance Review Dashboard</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
     <header>
-        <h1>📊 xincere-review</h1>
-        <p>人事評価プロセス管理システム</p>
+        <div class="header-content">
+            <h1>xincere-review</h1>
+            <p class="subtitle">Performance Review System</p>
+        </div>
     </header>
-    
+
     <main>
-        <section class="current-period">
-            <h2>現在の評価期間</h2>
-            <div class="period-badge">2025-H2</div>
+        <!-- Hero Section: Current Period -->
+        <section class="hero-period">
+            <div class="period-container">
+                <p class="period-label">評価期間</p>
+                <div class="period-badge">2025-H2</div>
+                <p class="period-subtitle">継続的な成長と改善のために</p>
+            </div>
         </section>
-        
-        <section class="stats">
-            <h2>統計サマリー</h2>
-            <div class="stat-cards">
+
+        <!-- Statistics Dashboard -->
+        <section class="dashboard-stats">
+            <h2 class="section-title">
+                <span class="title-text">統計サマリー</span>
+                <span class="title-accent"></span>
+            </h2>
+            <div class="stat-grid">
                 <div class="stat-card">
-                    <div class="stat-value">11</div>
-                    <div class="stat-label">目標ファイル</div>
+                    <div class="stat-icon">🎯</div>
+                    <div class="stat-content">
+                        <div class="stat-value">11</div>
+                        <div class="stat-label">目標ファイル</div>
+                    </div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-value">1</div>
-                    <div class="stat-label">振り返りファイル</div>
+                    <div class="stat-icon">📝</div>
+                    <div class="stat-content">
+                        <div class="stat-value">1</div>
+                        <div class="stat-label">振り返りファイル</div>
+                    </div>
                 </div>
             </div>
         </section>
-        
-        <section class="links">
-            <h2>🎯 目標</h2>
-            <ul class="file-list">
+
+        <!-- Goals & Reviews Grid -->
+        <div class="content-grid">
+            <!-- Goals Section -->
+            <section class="goals-section">
+                <h2 class="section-title">
+                    <span class="title-icon">🎯</span>
+                    <span class="title-text">目標</span>
+                    <span class="title-accent"></span>
+                </h2>
                 
-                <li><a href="goals/2026-02-日次目標.html">2026-02-日次目標</a></li>
+                <div class="file-grid">
+                    
+                    <a href="goals/2026-02-日次目標.html" class="file-card">
+                        <div class="file-card-header">
+                            <span class="file-icon">📄</span>
+                            <span class="file-type">Goal</span>
+                        </div>
+                        <div class="file-card-body">
+                            <h3 class="file-name">2026-02-日次目標</h3>
+                        </div>
+                    </a>
+                    
+                    <a href="goals/2026-01-日次目標.html" class="file-card">
+                        <div class="file-card-header">
+                            <span class="file-icon">📄</span>
+                            <span class="file-type">Goal</span>
+                        </div>
+                        <div class="file-card-body">
+                            <h3 class="file-name">2026-01-日次目標</h3>
+                        </div>
+                    </a>
+                    
+                    <a href="goals/2025-H2-週次目標.html" class="file-card">
+                        <div class="file-card-header">
+                            <span class="file-icon">📄</span>
+                            <span class="file-type">Goal</span>
+                        </div>
+                        <div class="file-card-body">
+                            <h3 class="file-name">2025-H2-週次目標</h3>
+                        </div>
+                    </a>
+                    
+                    <a href="goals/2025-H2-月次目標.html" class="file-card">
+                        <div class="file-card-header">
+                            <span class="file-icon">📄</span>
+                            <span class="file-type">Goal</span>
+                        </div>
+                        <div class="file-card-body">
+                            <h3 class="file-name">2025-H2-月次目標</h3>
+                        </div>
+                    </a>
+                    
+                    <a href="goals/2025-H2-圧縮版-週次目標.html" class="file-card">
+                        <div class="file-card-header">
+                            <span class="file-icon">📄</span>
+                            <span class="file-type">Goal</span>
+                        </div>
+                        <div class="file-card-body">
+                            <h3 class="file-name">2025-H2-圧縮版-週次目標</h3>
+                        </div>
+                    </a>
+                    
+                    <a href="goals/2025-H2-圧縮版-日次目標.html" class="file-card">
+                        <div class="file-card-header">
+                            <span class="file-icon">📄</span>
+                            <span class="file-type">Goal</span>
+                        </div>
+                        <div class="file-card-body">
+                            <h3 class="file-name">2025-H2-圧縮版-日次目標</h3>
+                        </div>
+                    </a>
+                    
+                    <a href="goals/2025-H2-半期目標.html" class="file-card">
+                        <div class="file-card-header">
+                            <span class="file-icon">📄</span>
+                            <span class="file-type">Goal</span>
+                        </div>
+                        <div class="file-card-body">
+                            <h3 class="file-name">2025-H2-半期目標</h3>
+                        </div>
+                    </a>
+                    
+                    <a href="goals/2025-12-日次目標.html" class="file-card">
+                        <div class="file-card-header">
+                            <span class="file-icon">📄</span>
+                            <span class="file-type">Goal</span>
+                        </div>
+                        <div class="file-card-body">
+                            <h3 class="file-name">2025-12-日次目標</h3>
+                        </div>
+                    </a>
+                    
+                    <a href="goals/2025-11-日次目標.html" class="file-card">
+                        <div class="file-card-header">
+                            <span class="file-icon">📄</span>
+                            <span class="file-type">Goal</span>
+                        </div>
+                        <div class="file-card-body">
+                            <h3 class="file-name">2025-11-日次目標</h3>
+                        </div>
+                    </a>
+                    
+                    <a href="goals/2025-10-日次目標.html" class="file-card">
+                        <div class="file-card-header">
+                            <span class="file-icon">📄</span>
+                            <span class="file-type">Goal</span>
+                        </div>
+                        <div class="file-card-body">
+                            <h3 class="file-name">2025-10-日次目標</h3>
+                        </div>
+                    </a>
+                    
+                    <a href="goals/2025-09-日次目標.html" class="file-card">
+                        <div class="file-card-header">
+                            <span class="file-icon">📄</span>
+                            <span class="file-type">Goal</span>
+                        </div>
+                        <div class="file-card-body">
+                            <h3 class="file-name">2025-09-日次目標</h3>
+                        </div>
+                    </a>
+                    
+                </div>
                 
-                <li><a href="goals/2026-01-日次目標.html">2026-01-日次目標</a></li>
-                
-                <li><a href="goals/2025-H2-週次目標.html">2025-H2-週次目標</a></li>
-                
-                <li><a href="goals/2025-H2-月次目標.html">2025-H2-月次目標</a></li>
-                
-                <li><a href="goals/2025-H2-圧縮版-週次目標.html">2025-H2-圧縮版-週次目標</a></li>
-                
-                <li><a href="goals/2025-H2-圧縮版-日次目標.html">2025-H2-圧縮版-日次目標</a></li>
-                
-                <li><a href="goals/2025-H2-半期目標.html">2025-H2-半期目標</a></li>
-                
-                <li><a href="goals/2025-12-日次目標.html">2025-12-日次目標</a></li>
-                
-                <li><a href="goals/2025-11-日次目標.html">2025-11-日次目標</a></li>
-                
-                <li><a href="goals/2025-10-日次目標.html">2025-10-日次目標</a></li>
-                
-                <li><a href="goals/2025-09-日次目標.html">2025-09-日次目標</a></li>
-                
-            </ul>
-            
-            <h2>📅 振り返り</h2>
-            <h3>週次</h3>
-            <ul class="file-list">
-                
-                <li><a href="reviews/weekly/2025-W52.html">2025-W52</a></li>
-                
-            </ul>
-            
-            <h3>月次</h3>
-            <ul class="file-list">
-                
-            </ul>
-        </section>
+            </section>
+
+            <!-- Reviews Section -->
+            <section class="reviews-section">
+                <h2 class="section-title">
+                    <span class="title-icon">📅</span>
+                    <span class="title-text">振り返り</span>
+                    <span class="title-accent"></span>
+                </h2>
+
+                <!-- Weekly Reviews -->
+                <div class="review-category">
+                    <h3 class="category-title">
+                        <span class="category-dot"></span>
+                        週次振り返り
+                    </h3>
+                    
+                    <div class="file-list">
+                        
+                        <a href="reviews/weekly/2025-W52.html" class="file-link">
+                            <span class="link-indicator"></span>
+                            <span class="link-text">2025-W52</span>
+                            <span class="link-arrow">→</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+
+                <!-- Monthly Reviews -->
+                <div class="review-category">
+                    <h3 class="category-title">
+                        <span class="category-dot"></span>
+                        月次振り返り
+                    </h3>
+                    
+                    <p class="empty-state">月次振り返りファイルがありません</p>
+                    
+                </div>
+            </section>
+        </div>
     </main>
-    
+
     <footer>
-        <p>Generated: 2025-12-26 19:37:21</p>
+        <div class="footer-content">
+            <p class="footer-text">Generated: 2025-12-26 19:46:50</p>
+            <p class="footer-credit">Built with xincere-review</p>
+        </div>
     </footer>
 </body>
 </html>
