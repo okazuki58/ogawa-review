@@ -13,96 +13,460 @@
     </header>
     
     <main class="content">
-        <h1>2025H2 半期目標</h1>
-<p><strong>期間</strong>: 2025年9月〜2026年2月（6ヶ月）</p>
-<p><strong>現在のグレード</strong>: G2（作業者）</p>
-<p><strong>目標グレード</strong>: G3（自走可能）</p>
-<h2>目標概要</h2>
-<p>G3昇進を目指し、前回評価（2025H1）の課題を踏まえた3つの目標を設定。</p>
+        <h1>2025H2 半期目標（改訂版）</h1>
+<p><strong>期間</strong>: 2025年9月〜2026年2月（6ヶ月）
+<strong>作成日</strong>: 2026年1月3日
+<strong>現在のグレード</strong>: G2（作業者）
+<strong>目標グレード</strong>: G3（自走可能）</p>
+<h2>半期テーマ</h2>
+<p><strong>AI依存で不足した基礎力を固め、仕組み（skills）を作って組織に貢献する</strong></p>
+<h2>背景・課題認識</h2>
+<h3>根本的な課題</h3>
+<p>この1年間、AIを使って実装を続けてきたが、基礎的な理解が乏しいまま実装を進めてしまった結果、以下の課題が浮かび上がった：</p>
+<ol>
+<li><strong>基礎力の不足</strong></li>
+<li>Rubyの基礎・発展的な理解が不足</li>
+<li>設計力の不足（DB設計、アーキテクチャ、ドメインモデリング）</li>
+<li>
+<p>インフラ知識の不足</p>
+</li>
+<li>
+<p><strong>アウトプットの課題</strong></p>
+</li>
+<li>「大したことじゃない」と思い、学びをアウトプットしない</li>
+<li>
+<p>記事ネタが思いつかない</p>
+</li>
+<li>
+<p><strong>属人化・効率化の課題</strong></p>
+</li>
+<li>何をドキュメント化すべきかわからない</li>
+<li>チームへの貢献が見えにくい</li>
+</ol>
+<h3>解決アプローチ</h3>
+<p><strong>仕組み（skills）を作って、誰でも同じことができるようにする = 属人化防止・効率化・品質向上 = 組織貢献</strong></p>
 <ul>
-<li><strong>Be hungry</strong>: A評価 → S評価へ</li>
-<li><strong>Be an owner</strong>: B評価 → A評価へ</li>
-<li><strong>Be sustainable</strong>: B評価 → A評価へ</li>
+<li>learning-support: 誰でも学習を簡単に進められる</li>
+<li>maclogger: 学習記録、週報作成、目標振り返り</li>
+<li>spec-to-code: SDD（仕様駆動開発）+ TDD</li>
+<li>article-generator: 記事執筆支援</li>
+<li>task-management: プロジェクト管理・GitHub Projects連携</li>
+<li>goal-management: 目標管理</li>
 </ul>
+<p>まず自分がテスト的に使ってみて、効果があれば徐々に使ってもらう人を増やし、実際に組織単位で効果があるかを検証する。</p>
 <hr />
-<h2>Be hungry（貪欲になれ）- 前回A評価 → S評価へ</h2>
-<h3>半期目標</h3>
-<p>設計力を向上させ、学びを週1回以上恒常的にアウトプットする</p>
-<h3>【評価項目1: 貪欲に新しいものを勉強したか】</h3>
+<h2>Value別の半期目標</h2>
+<h3>Be hungry（貪欲になれ）- 前回A評価 → S評価へ</h3>
+<h4>【評価項目1: 貪欲に新しいものを勉強したか】</h4>
+<p><strong>目標</strong>: AI依存で不足した基礎力を体系的に学び直す</p>
+<p><strong>具体的な実行計画</strong>:</p>
 <ul>
-<li>[ ] 設計関連の技術書を2冊以上読破（DB設計、アーキテクチャパターンなど）</li>
-<li>[ ] 学んだ設計パターンを実プロジェクトで3回以上適用</li>
-<li>[ ] AWSの体系的な学習を行う（AWS認定資格取得を目指す、難しい場合でも体系的な学習を継続）</li>
+<li>[ ] <strong>Rubyの基礎・発展的な学習（learning-support使用）</strong></li>
+<li>learning-supportで学習計画を立案</li>
+<li>基礎文法、オブジェクト指向、メタプログラミング</li>
+<li>Rails の内部実装、設計パターン、パフォーマンスチューニング</li>
+<li>実プロジェクトで学んだ知識を適用</li>
+<li>学習記録をmacloggerに記録</li>
+<li>
+<p>GitHub Issues/Projectsで学習進捗を管理</p>
+</li>
+<li>
+<p>[ ] <strong>設計の学習（learning-support使用）</strong></p>
+</li>
+<li>DB設計の基礎・発展</li>
+<li>アーキテクチャパターン（MVC、レイヤードアーキテクチャ、クリーンアーキテクチャなど）</li>
+<li>ドメインモデリングの基礎</li>
+<li>学んだパターンを実プロジェクトで適用</li>
+<li>学習記録をmacloggerに記録</li>
+<li>
+<p>GitHub Issues/Projectsで学習進捗を管理</p>
+</li>
+<li>
+<p>[ ] <strong>インフラ知識の習得（learning-support使用）</strong></p>
+</li>
+<li>Docker、CI/CD、デプロイの基礎・発展</li>
+<li>実プロジェクトで活用</li>
+<li>学習記録をmacloggerに記録</li>
+<li>GitHub Issues/Projectsで学習進捗を管理</li>
 </ul>
-<h3>【評価項目2: 貪欲に仕事に取り組んだか】</h3>
+<p><strong>進捗管理</strong>:
+- learning-supportでGitHub Issues/Projectsで学習計画・進捗を管理
+- macloggerで日々の学習を記録</p>
+<h4>【評価項目2: 貪欲に仕事に取り組んだか】</h4>
+<p><strong>目標</strong>: 小さな学びも価値があると認識し、アウトプットする仕組みを構築する</p>
+<p><strong>具体的な実行計画</strong>:</p>
 <ul>
-<li>[ ] 技術ブログ/Qiita記事を隔週で投稿 → <strong>半期で12本以上</strong></li>
-<li>[ ] <strong>詳細な技術ドキュメントを2本作成</strong>（Confluence/Google Slide/動画解説など、形式は自由）</li>
-<li>[ ] AIを使った設計の最適化手法をドキュメント化</li>
-<li>[ ] 細かいナレッジ共有（Slackなど）は気づいたときに随時実施</li>
+<li>[ ] <strong>article-generatorスキルの作成（2025H2で作成予定）</strong></li>
+<li>macloggerの記録から記事ネタを提案</li>
+<li>「何がどう学びになったのか、それがどう組織の役に立つのか」という視点で段落構成を作成</li>
+<li>
+<p>ユーザーが選択・編集して公開</p>
+</li>
+<li>
+<p>[ ] <strong>article-generatorを使ってQiita記事を月1本ペース → 半期6本</strong></p>
+</li>
+<li>「大したことじゃない」という思い込みを捨てる</li>
+<li>小さな学び（エラー解決、設定方法、ハマりポイントなど）も記事にする</li>
+<li>
+<p>仕組みで継続を実現</p>
+</li>
+<li>
+<p>[ ] <strong>macloggerで日々の学びを記録</strong></p>
+</li>
+<li>毎日の開発・学びをmacloggerに記録</li>
+<li>article-generatorの記事ネタ提案に活用</li>
 </ul>
-<h3>狙い</h3>
-<p>前回「アウトプットを恒常的に」との指摘を受け、週1回以上の発信を仕組み化。また、AIが苦手とする設計力を深めることで技術力を高める。</p>
+<p><strong>狙い</strong>: article-generatorで「小さな学びを価値あるアウトプット」に変換する仕組みを確立し、月1本の記事投稿を習慣化。A→S評価を目指す。</p>
 <hr />
-<h2>Be an owner（当事者たれ）- 前回B評価 → A評価へ</h2>
-<h3>半期目標</h3>
-<p>新規事業の成功に向けて、チーム全体の生産性を高める情報基盤を構築する</p>
-<h3>【評価項目1: 締め切り意識を持てたか】</h3>
+<h3>Be an owner（当事者たれ）- 前回B評価 → A評価へ</h3>
+<h4>【評価項目1: 締め切り意識を持てたか】</h4>
+<p><strong>目標</strong>: タスク管理を仕組み化し、進捗を可視化する</p>
+<p><strong>具体的な実行計画</strong>:</p>
 <ul>
-<li>[ ] すべてのタスクを期限内に完了（やむを得ない場合は事前相談）</li>
-<li>[ ] 週次で進捗・課題・学びをまとめて事業部長・社長と共有（macloggerと連携） → <strong>半期で24回</strong></li>
+<li>[ ] <strong>task-managementスキルでタスク管理を仕組み化</strong></li>
+<li>task-managementスキルを使って、GitHub Projectsでプロジェクト管理</li>
+<li>1人開発であってもチーム開発を想定し、進捗を見える化</li>
+<li>タスクの優先順位、期限、進捗状況を明確化</li>
+<li>誰が見ても進捗状況がわかる状態にする</li>
+<li>期限内にタスクを完了させる仕組みを構築<ul>
+<li>タスクの粒度を適切にする</li>
+<li>週次でタスクを見直し、優先順位を調整</li>
+<li>期限が迫っているタスクをアラート</li>
 </ul>
-<h3>【評価項目2: チーム全体の生産性に寄与したか】</h3>
+</li>
+</ul>
+<h4>【評価項目2: チーム全体の生産性に寄与したか】</h4>
+<p><strong>目標</strong>: skillsを作成・改善し、組織に貢献する仕組みを構築する</p>
+<p><strong>具体的な実行計画</strong>:</p>
 <ul>
-<li>[ ] 開発ドキュメント（アーキテクチャ図、API仕様、セットアップ手順など）を月1回以上更新</li>
-<li>[ ] GitHub Issues/Projectsでタスク管理を可視化（進捗を誰でも見られる状態に）</li>
-<li>[ ] CoderabbitなどのAIレビューツールを導入し、自動レビューの仕組みを構築</li>
-<li>[ ] 新機能開発時、既存コードとの整合性を確認するチェックリストを作成・運用</li>
+<li>[ ] <strong>spec-to-codeスキルでSDD+TDD実践</strong></li>
+<li>spec-to-codeスキルを使った仕様駆動開発+TDDの実践</li>
+<li>実プロジェクトで活用し、効果を検証</li>
+<li>使用例・効果をドキュメント化</li>
+<li>
+<p>どのように品質が向上したか、どのように開発効率が上がったかを可視化</p>
+</li>
+<li>
+<p>[ ] <strong>新しいskillsを作成</strong></p>
+</li>
+<li>article-generator: 記事執筆支援（2025H2で作成）</li>
+<li>
+<p>その他、必要に応じて作成</p>
+</li>
+<li>
+<p>[ ] <strong>既存skillsを改善</strong></p>
+</li>
+<li>learning-support: 学習サポート機能の充実</li>
+<li>maclogger: 学習記録・振り返り機能の改善</li>
+<li>spec-to-code: SDD+TDD機能の改善</li>
+<li>task-management: プロジェクト管理機能の改善</li>
+<li>
+<p>goal-management: 目標管理機能の改善</p>
+</li>
+<li>
+<p>[ ] <strong>skillsの組織活用</strong></p>
+</li>
+<li>まず自分がテスト的に使用</li>
+<li>効果を可視化・ドキュメント化<ul>
+<li>どのskillをどう使ったか</li>
+<li>どんな効果があったか（時間効率、品質、属人化防止）</li>
+<li>使用例・ベストプラクティス</li>
 </ul>
-<h3>狙い</h3>
-<p>前回「チーム全体の生産性向上のための情報蓄積やコミュニケーション」が課題。一人開発でも、情報を可視化・共有することでチーム全体に貢献できる。</p>
+</li>
+<li>効果が確認できたら、徐々に社内で共有・活用</li>
+<li>実際に組織単位で効果があるかを検証</li>
+</ul>
+<p><strong>狙い</strong>: skillsを作成・改善し、自分で使って効果を検証。効果が確認できたら組織に共有し、属人化防止・効率化・品質向上を実現。これがチーム全体の生産性向上に貢献し、B→A評価を目指す。</p>
 <hr />
-<h2>Be sustainable（継続的であれ）- 前回B評価 → A評価へ</h2>
-<h3>半期目標</h3>
-<p>属人化を解消し、自分以外の誰でも開発を引き継げる状態にする</p>
-<h3>【評価項目1: 属人化しないように仕組み化するようになにかやれたか】</h3>
+<h3>Be sustainable（継続的であれ）- 前回B評価 → A評価へ</h3>
+<h4>【評価項目1: 属人化しないように仕組み化するようになにかやれたか】</h4>
+<p><strong>目標</strong>: skillsによる仕組み化で、属人化を防ぐ</p>
+<p><strong>具体的な実行計画</strong>:</p>
 <ul>
-<li>[ ] 全ての主要機能にREADME/ドキュメントを整備（最低10機能）</li>
-<li>[ ] <strong>環境構築を標準化・自動化し、誰でも30分以内に開発を始められる状態にする</strong></li>
-<li>手段: Docker化、セットアップスクリプト、READMEの整備など</li>
-<li>狙い: 属人化防止、新メンバーがすぐに参加できる</li>
-<li>[ ] トラブルシューティングガイドを作成（過去の障害とその解決方法を記録）</li>
-<li>[ ] 技術的判断の根拠をドキュメント化（なぜこの技術を選んだか、なぜこの設計にしたか）</li>
+<li>[ ] <strong>learning-supportで学習を仕組み化</strong></li>
+<li>誰でも同じように体系的に学習できる</li>
+<li>GitHub Issues/Projectsで学習進捗を可視化</li>
+<li>
+<p>学習記録を残し、他の人も参照できる</p>
+</li>
+<li>
+<p>[ ] <strong>article-generatorでアウトプットを仕組み化</strong></p>
+</li>
+<li>記事執筆のハードルを下げる</li>
+<li>「何を書けばいいかわからない」を解消</li>
+<li>
+<p>組織貢献の視点を自動で提案</p>
+</li>
+<li>
+<p>[ ] <strong>spec-to-codeで開発プロセスを仕組み化</strong></p>
+</li>
+<li>SDD+TDDで品質を担保</li>
+<li>仕様→テスト→実装の流れを標準化</li>
+<li>
+<p>誰でも同じ品質で開発できる</p>
+</li>
+<li>
+<p>[ ] <strong>task-managementでタスク管理を仕組み化</strong></p>
+</li>
+<li>GitHub Projectsでタスクを可視化</li>
+<li>誰でも進捗状況を確認できる</li>
+<li>
+<p>1人開発でもチーム開発を想定した管理</p>
+</li>
+<li>
+<p>[ ] <strong>macloggerで記録・振り返りを仕組み化</strong></p>
+</li>
+<li>日々の学び・進捗を記録</li>
+<li>週次・月次・半期の振り返りを自動生成</li>
+<li>
+<p>記録が蓄積され、後から参照できる</p>
+</li>
+<li>
+<p>[ ] <strong>goal-managementで目標管理を仕組み化</strong></p>
+</li>
+<li>半期→月次→週次の目標を管理</li>
+<li>進捗を可視化</li>
+<li>誰でも目標の達成状況を確認できる</li>
 </ul>
-<h3>【評価項目2: 日常業務に対して改善する動きができたか】</h3>
+<p><strong>狙い</strong>: skillsによる仕組み化で、「自分しかできない」状態を解消。誰でも同じことができるようになり、属人化を防ぐ。</p>
+<h4>【評価項目2: 日常業務に対して改善する動きができたか】</h4>
+<p><strong>目標</strong>: skillsで日常業務を効率化・改善する</p>
+<p><strong>具体的な実行計画</strong>:</p>
 <ul>
-<li>[ ] 繰り返し作業（デプロイ、テスト、データ投入など）を3つ以上自動化</li>
-<li>[ ] CI/CDパイプラインの改善提案・実施（ビルド時間短縮、テスト自動化など）</li>
-<li>[ ] 開発プロセスの改善提案を月1回実施</li>
+<li>[ ] <strong>skillsによる効率化</strong></li>
+<li>learning-support: 学習計画・進捗管理の効率化</li>
+<li>article-generator: 記事執筆の効率化</li>
+<li>maclogger: 記録・振り返りの効率化</li>
+<li>spec-to-code: 開発プロセスの効率化</li>
+<li>task-management: タスク管理の効率化</li>
+<li>
+<p>goal-management: 目標管理の効率化</p>
+</li>
+<li>
+<p>[ ] <strong>効果の測定・ドキュメント化</strong></p>
+</li>
+<li>各skillでどれだけ時間が短縮されたか</li>
+<li>どれだけ品質が向上したか</li>
+<li>どれだけ属人化が解消されたか</li>
+<li>
+<p>具体的な数値・事例をドキュメント化</p>
+</li>
+<li>
+<p>[ ] <strong>CI/CDや自動化の改善</strong></p>
+</li>
+<li>必要に応じてCI/CDパイプラインを改善</li>
+<li>繰り返し作業を自動化</li>
 </ul>
-<h3>狙い</h3>
-<p>前回「自分以外の誰でも同じことをできるか」が課題。ドキュメント化と自動化を徹底し、属人化を解消する。また、技術的判断の根拠を残すことで、将来の引き継ぎやスケールに備える。</p>
+<p><strong>狙い</strong>: skillsを活用して日常業務を効率化・改善し、その効果を可視化することで、組織全体の生産性向上に貢献。B→A評価を目指す。</p>
+<hr />
+<h2>成果指標（KPI）</h2>
+<h3>学習（Be hungry）</h3>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>目標値</th>
+<th>手段</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ruby基礎・発展学習</td>
+<td>完了</td>
+<td>learning-support</td>
+</tr>
+<tr>
+<td>設計の学習</td>
+<td>開始・継続</td>
+<td>learning-support</td>
+</tr>
+<tr>
+<td>インフラ知識の習得</td>
+<td>開始・継続</td>
+<td>learning-support</td>
+</tr>
+<tr>
+<td>学習記録</td>
+<td>毎日</td>
+<td>maclogger</td>
+</tr>
+<tr>
+<td>学習進捗管理</td>
+<td>継続</td>
+<td>GitHub Issues/Projects</td>
+</tr>
+</tbody>
+</table>
+<h3>アウトプット（Be hungry）</h3>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>目標値</th>
+<th>手段</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>article-generatorスキル作成</td>
+<td>完了</td>
+<td>2025H2で作成</td>
+</tr>
+<tr>
+<td>Qiita記事投稿数</td>
+<td>6本（月1本）</td>
+<td>article-generator</td>
+</tr>
+<tr>
+<td>日々の学び記録</td>
+<td>毎日</td>
+<td>maclogger</td>
+</tr>
+</tbody>
+</table>
+<h3>skills作成・組織貢献（Be an owner）</h3>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>目標値</th>
+<th>手段</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>task-managementでタスク管理仕組み化</td>
+<td>実施</td>
+<td>GitHub Projects</td>
+</tr>
+<tr>
+<td>spec-to-codeでSDD+TDD実践</td>
+<td>実プロジェクトで活用</td>
+<td>spec-to-code</td>
+</tr>
+<tr>
+<td>新しいskills作成</td>
+<td>article-generator等</td>
+<td>開発</td>
+</tr>
+<tr>
+<td>既存skills改善</td>
+<td>learning-support等</td>
+<td>改善・充実</td>
+</tr>
+<tr>
+<td>skillsの効果ドキュメント化</td>
+<td>各skillで実施</td>
+<td>ドキュメント作成</td>
+</tr>
+<tr>
+<td>skillsの社内共有</td>
+<td>効果確認後に開始</td>
+<td>段階的に共有</td>
+</tr>
+</tbody>
+</table>
+<h3>仕組み化・効率化（Be sustainable）</h3>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>目標値</th>
+<th>手段</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>learning-supportで学習仕組み化</td>
+<td>実施</td>
+<td>学習計画・進捗管理</td>
+</tr>
+<tr>
+<td>article-generatorでアウトプット仕組み化</td>
+<td>実施</td>
+<td>記事執筆支援</td>
+</tr>
+<tr>
+<td>spec-to-codeで開発仕組み化</td>
+<td>実施</td>
+<td>SDD+TDD</td>
+</tr>
+<tr>
+<td>task-managementでタスク管理仕組み化</td>
+<td>実施</td>
+<td>GitHub Projects</td>
+</tr>
+<tr>
+<td>macloggerで記録・振り返り仕組み化</td>
+<td>実施</td>
+<td>日々の記録・週次振り返り</td>
+</tr>
+<tr>
+<td>goal-managementで目標管理仕組み化</td>
+<td>実施</td>
+<td>進捗可視化</td>
+</tr>
+<tr>
+<td>skillsの効果測定</td>
+<td>実施</td>
+<td>時間・品質・属人化の改善効果を測定</td>
+</tr>
+</tbody>
+</table>
 <hr />
 <h2>この目標がG3昇進につながる理由</h2>
 <p><strong>G3の要件</strong>: 自発的に作業を切り出して進められる</p>
-<p>上記3つの目標は、いずれも「指示されずに自ら課題を見つけて改善する」姿勢を示すものです。</p>
+<h3>Be hungry S評価の貢献</h3>
 <ul>
-<li><strong>Be hungry S評価</strong>: 技術的な深掘りと発信力 → 自発的な学習・成長</li>
-<li><strong>Be an owner A評価</strong>: チーム全体の生産性向上 → 自分の担当範囲を超えた貢献</li>
-<li><strong>Be sustainable A評価</strong>: 仕組み化・ドキュメント化 → 組織の継続性への貢献</li>
+<li><strong>基礎力の体系的な学び直し</strong>: AIに頼るだけでなく、自ら基礎から学び直す姿勢 → 自発的な成長</li>
+<li><strong>article-generatorで仕組み化</strong>: アウトプットを仕組み化し、継続的に発信 → 自発的な発信・組織貢献</li>
+</ul>
+<h3>Be an owner A評価の貢献</h3>
+<ul>
+<li><strong>task-managementでタスク管理を仕組み化</strong>: 1人開発でもチーム開発を想定し、進捗を見える化 → 自発的な改善</li>
+<li><strong>spec-to-codeでSDD+TDD</strong>: 開発プロセスを改善し、品質向上 → 自発的な改善</li>
+<li><strong>skillsを作成・改善</strong>: 組織の課題を見つけ、skillsで解決 → 自発的な課題発見・解決</li>
+<li><strong>skillsの効果を可視化・共有</strong>: 効果を検証し、組織に貢献 → 自分の担当範囲を超えた貢献</li>
+</ul>
+<h3>Be sustainable A評価の貢献</h3>
+<ul>
+<li><strong>skillsで属人化防止</strong>: 誰でも同じことができる仕組みを作る → 組織の継続性への貢献</li>
+<li><strong>効率化・品質向上</strong>: skillsで日常業務を改善 → 自発的な改善</li>
 </ul>
 <p>これらが達成できれば、G3相当の「自発的に作業を切り出して進められる」レベルに到達できます。</p>
 <hr />
 <h2>進捗管理</h2>
 <ul>
-<li><strong>月次目標</strong>: <a href="2025-H2-月次目標.md">2025-H2-月次目標.md</a></li>
-<li><strong>週次目標</strong>: <a href="2025-H2-週次目標.md">2025-H2-週次目標.md</a></li>
+<li><strong>月次目標</strong>: 半期目標を月次に分解 → <code>2025-H2-月次目標-改訂版.md</code></li>
+<li><strong>週次目標</strong>: 月次目標を週次に分解 → <code>2025-H2-週次目標-改訂版.md</code></li>
 </ul>
+<p><strong>進捗確認</strong>:
+- <strong>日次</strong>: macloggerで日々の学び・進捗を記録
+- <strong>週次</strong>: maclogger-reviewで週次振り返り
+- <strong>月次</strong>: goal-managementで目標進捗を確認
+- <strong>半期</strong>: maclogger-reviewで半期振り返り（2026年2月末）</p>
+<hr />
+<h2>補足: 前回目標との違い</h2>
+<h3>前回の2025H2目標の課題</h3>
+<ul>
+<li>「技術ブログを隔週で投稿 → 半期12本」は現実的でない → <strong>月1本（半期6本）に変更</strong></li>
+<li>「AWSの体系的な学習」は優先度が低い → <strong>削除し、基礎力（Ruby）と設計に集中</strong></li>
+<li>「〇〇する」という抽象的な目標 → <strong>具体的にどのskillを使ってどう実現するかを明記</strong></li>
+<li>「すべてのタスクを期限内に完了」は当たり前 → <strong>どう仕組み化するかを目標に</strong></li>
+</ul>
+<h3>今回の改訂ポイント</h3>
+<ol>
+<li><strong>AI依存で不足した基礎力を固める</strong>: Ruby（基礎・発展）、設計、インフラを体系的に学び直す</li>
+<li><strong>skillsを活用</strong>: learning-support、article-generator、spec-to-code、maclogger、task-management、goal-management等を具体的に活用</li>
+<li><strong>組織貢献を明確化</strong>: skillsを作成・改善し、効果を可視化・共有することで組織に貢献</li>
+<li><strong>現実的なKPI</strong>: 月1本（半期6本）の記事投稿など、達成可能な目標に設定</li>
+<li><strong>仕組み化を重視</strong>: 「〇〇する」ではなく「どう仕組み化するか」を目標に</li>
+</ol>
     </main>
     
     <footer>
         <p><a href="../index.html">ダッシュボードに戻る</a></p>
-        <p>2025-12-27 03:24:47</p>
+        <p>2026-01-03 14:13:10</p>
     </footer>
 </body>
 </html>
